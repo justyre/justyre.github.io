@@ -16,7 +16,7 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
  ```
  Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
 
-3. Run in Git bash:
+3. Run in Git bash from the *parent* folder of `output`:
 ```
 pelican content -s publishconf.py
 ```
