@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Justyre Insight - programming</title><link href="http://justyre.github.io/" rel="alternate"></link><link href="http://justyre.github.io/feeds/programming.atom.xml" rel="self"></link><id>http://justyre.github.io/</id><updated>2017-05-02T00:00:00+08:00</updated><entry><title>Miscellaneous</title><link href="http://justyre.github.io/misc.html" rel="alternate"></link><published>2017-05-02T00:00:00+08:00</published><updated>2017-05-02T00:00:00+08:00</updated><author><name>Edward Justyre</name></author><id>tag:justyre.github.io,2017-05-02:/misc.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Justyre Insight - programming</title><link href="http://justyre.github.io/" rel="alternate"></link><link href="http://justyre.github.io/feeds/programming.atom.xml" rel="self"></link><id>http://justyre.github.io/</id><updated>2017-05-02T00:00:00+08:00</updated><entry><title>Miscellaneous</title><link href="http://justyre.github.io/U20170502_miscellaneous.html" rel="alternate"></link><published>2017-05-02T00:00:00+08:00</published><updated>2017-05-02T00:00:00+08:00</updated><author><name>Edward Justyre</name></author><id>tag:justyre.github.io,2017-05-02:/U20170502_miscellaneous.html</id><summary type="html">
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
@@ -11939,4 +11939,4 @@ E = F \cdot s
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python jupyter notebook"></category></entry></feed>
+</content><category term="python"></category><category term="jupyter"></category><category term="notebook"></category></entry></feed>
