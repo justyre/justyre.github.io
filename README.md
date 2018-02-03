@@ -21,6 +21,8 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
 pelican content -s publishconf.py
 ```
 If any other file update is desired other than the Github Page-generating part, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
+
+*Note*: the `-b` in `git checkout -b dev` is only necessary when there is no `dev` branch beforehand, otherwise it should be omitted.
 ```
 git checkout -b dev
 git add .gitignore README.md
