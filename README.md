@@ -1,10 +1,10 @@
 # justyre.github.io
 
-This is a blogging website designed by courtesy of [dataquest.io](https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/), based on M$ Windows 10 and an office network (behind a firewall and a myriad of blocked net ports...)
+This is a [blogging website](http://justyre.github.io) designed using Pelican, Github Pages, Python 3 and Jupyter Notebook. The local environment is M$ Windows 10 with an office network connection, which is behind a firewall and has few opened net ports.
 
 **Justyre 20180203:**
 
-When following the steps in the above link, I encountered the same problem as described [here](https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out), 
+When following the steps in [this post on dataquest.io](https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/), specifically when deploying to Github Pages, I encountered the same problem as described [here](https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out), 
 where I carried out the procedures in @Vihari Piratla's answer to fix it:
 
 First, run in Git Bash:
