@@ -2,6 +2,8 @@
 
 This is a [blogging website](http://justyre.github.io) designed using Pelican, Github Pages, Python 3 and Jupyter Notebook. The local environment is M$ Windows 10 with an office network connection, which is behind a firewall and has few opened net ports.
 
+## Tech Logs
+
 **Justyre 20180203:**
 
 When following the steps by courtesy of [this post on dataquest.io](https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/), specifically at the stage of deploying to Github Pages, when I ran:
