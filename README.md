@@ -4,15 +4,41 @@ This is a [blogging website](http://justyre.github.io) designed using Pelican, G
 
 ## Updating the Blog
 
-**Note** that there are certain **caveats** and messing up the order of steps below may cause fatal data loss.
+Note that there are certain **CAVEATS** and messing up the order of steps below may cause fatal data loss.
 
-1. Copy the existing `README.md` from `output` directory to its parent directory for the sake of backup.
+1. If desired, change the `THEME` parameter in `pelicanconf.py`.
 
-2. If desired, change the `THEME` parameter in `pelicanconf.py`.
+2. Run in Git bash consecutively:
+ ```
+ pelican content
+ pushd output
+ python -m pelican.server
+ ```
+ Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
 
-3. Run in Git bash `pelican content`, then `pushd output`, then `python -m pelican.server`. Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
+3. Run in Git bash:
+```
+pelican content -s publishconf.py
+```
+If any other file update is desired other than the Github Page-generating part, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
+```
+git checkout -b dev
+git add .gitignore README.md
+git commit -m 'modified branch: dev. J20180203'
+git push origin dev 
+```
 
-4. Run `pelican content -s publishconf.py`
+4. Import everything in the `output` folder to the `master` branch:
+```
+ghp-import output -b master
+```
+
+5. Push it to GitHub:
+```
+git push origin master
+```
+
+6. Now visit `username.github.io` and bravo!
 
 ## Tech Logs
 
