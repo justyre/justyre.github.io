@@ -8,21 +8,36 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
 
 1. If desired, change the `THEME` parameter in `pelicanconf.py`.
 
-2. Run in Git bash consecutively:
+2. Run in Git bash consecutively: (surely we already have the branch `master`)
  ```
+ git checkout master
  pelican content
  pushd output
  python -m pelican.server
  ```
- Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
+3. Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
 
-3. Run in Git bash from the *parent* folder of `output`:
+4. Run in Git bash:
+```
+popd output
+```
+So we are now at the *parent* folder of `output`. From here we run:
 ```
 pelican content -s publishconf.py
 ```
-If any other file update is desired other than the Github Page-generating part, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
 
-*Note*: the `-b` in `git checkout -b dev` is only necessary when there is no `dev` branch beforehand, otherwise it should be omitted.
+5. If any other file update is desired other than the Github Page-generating part, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
+
+* Case 1: If we have NOT created the branch `dev` before, run:
+```
+git checkout -b dev
+```
+
+* Case 2: If we have the branch `dev` already, run:
+```
+git checkout dev
+```
+After the above switch of branches, run:
 ```
 git checkout -b dev
 git add .gitignore README.md
@@ -40,7 +55,7 @@ ghp-import output -b master
 git push origin master
 ```
 
-6. Now visit `username.github.io` and bravo!
+6. Now visit `username.github.io`. *Estamos*!
 
 ## Tech Logs
 
