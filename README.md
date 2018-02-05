@@ -10,9 +10,9 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
 
 2. Run in Git bash consecutively: (surely we already have the branch `master`)
  ```
- git checkout master
  pelican content
  pushd output
+ git checkout master
  python -m pelican.server
  ```
 3. Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
