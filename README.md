@@ -6,56 +6,32 @@ This is a [blogging website](http://justyre.github.io) designed using Pelican, G
 
 Note that there are certain **CAVEATS** and messing up the order of steps below may cause fatal data loss.
 
-1. If desired, change the `THEME` parameter in `pelicanconf.py`.
+1. (Not Essential) If any other file update is desired other than the Github Page-generating mission, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
 
-2. Run in Git bash consecutively: (surely we already have the branch `master`)
- ```
- pelican content
- pushd output
- git checkout master
- python -m pelican.server
- ```
-3. Visit [this](http://localhost:8000) to preview the generated webpages *locally*.
-
-4. Run in Git bash:
-```
-popd output
-```
-So we are now at the *parent* folder of `output`. From here we run:
-```
-pelican content -s publishconf.py
-```
-
-5. If any other file update is desired other than the Github Page-generating part, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
-
-* Case 1: If we have NOT created the branch `dev` before, run:
+  1. If we have NOT created the branch `dev` before, run:
 ```
 git checkout -b dev
 ```
 
-* Case 2: If we have the branch `dev` already, run:
+  1. If we have the branch `dev` already, run:
 ```
 git checkout dev
 ```
 After the above switch of branches, run:
 ```
-git checkout -b dev
 git add .gitignore README.md
 git commit -m 'modified branch: dev. J20180203'
 git push origin dev 
 ```
+1. If desired, change the `THEME` parameter in `pelicanconf.py`.
 
-4. Import everything in the `output` folder to the `master` branch:
-```
-ghp-import output -b master
-```
-
-5. Push it to GitHub:
-```
-git push origin master
-```
-
-6. Now visit `username.github.io`. *Estamos*!
+1. Run in Git bash consecutively: (surely we already have the branch `master`)
+ ```
+ pelican content -s publishconf.py
+ ghp-import output -b master
+ git push origin master
+ ```
+1. Now visit `username.github.io`. *Estamos*!
 
 ## Tech Logs
 
