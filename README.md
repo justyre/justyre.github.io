@@ -28,11 +28,11 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
 2. If desired, change the `THEME` parameter in `pelicanconf.py`.
 
 3. Run in Git bash consecutively: (surely we already have the branch `master`)
- ```
- pelican content -s publishconf.py
- ghp-import output -b master
- git push origin master
- ```
+   ```
+   pelican content -s publishconf.py
+   ghp-import output -b master
+   git push origin master
+   ```
 
 4. Now visit `username.github.io`. *Estamos*!
 
