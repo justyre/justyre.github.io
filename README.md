@@ -8,21 +8,22 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
 
 1. (Not Essential) If any other file update is desired other than the Github Page-generating mission, use the `dev` branch instead of `master` (where the blog is hosted). Suppose that we made some modifications and want to update `.gitignore` and `README.md`. Run the following in Git bash:
 
-  1. If we have NOT created the branch `dev` before, run:
-```
-git checkout -b dev
-```
+   1. If we have NOT created the branch `dev` before, run:
+   ```
+   git checkout -b dev
+   ```
 
-  1. If we have the branch `dev` already, run:
-```
-git checkout dev
-```
+   1. If we have the branch `dev` already, run:
+   ```
+   git checkout dev
+   ```
 After the above switch of branches, run:
 ```
 git add .gitignore README.md
 git commit -m 'modified branch: dev. J20180203'
 git push origin dev 
 ```
+
 1. If desired, change the `THEME` parameter in `pelicanconf.py`.
 
 1. Run in Git bash consecutively: (surely we already have the branch `master`)
@@ -31,6 +32,7 @@ git push origin dev
  ghp-import output -b master
  git push origin master
  ```
+
 1. Now visit `username.github.io`. *Estamos*!
 
 ## Tech Logs
