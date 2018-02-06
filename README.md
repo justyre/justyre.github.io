@@ -25,7 +25,7 @@ Note that there are certain **CAVEATS** and messing up the order of steps below 
    git push origin dev 
    ```
 
-2. If desired, change the `THEME` parameter in `pelicanconf.py`.
+2. If desired, change the `THEME` parameter in `publishconf.py`.
 
 3. Run in Git bash consecutively: (surely we already have the branch `master`)
    ```
